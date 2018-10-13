@@ -94,35 +94,35 @@ describe('<SuperTreeview />', () => {
             );
         });
 
-        it('should print node label', () => {
-            const firstLabel = standardProps.data[0].name;
-            const secondLabel = standardProps.data[1].name;
-            const thirdLabel = standardProps.data[2].name;
+        // it('should print node label', () => {
+        //     const firstLabel = standardProps.data[0].name;
+        //     const secondLabel = standardProps.data[1].name;
+        //     const thirdLabel = standardProps.data[2].name;
 
-            expect(
-                componentWrapElement
-                    .find('TransitionGroup')
-                    .childAt(0)
-                    .find('CSSTransition > div label')
-                    .text()
-            ).to.equal(firstLabel);
+        //     expect(
+        //         componentWrapElement
+        //             .find('TransitionGroup')
+        //             .childAt(0)
+        //             .find('CSSTransition > div label')
+        //             .text()
+        //     ).to.equal(firstLabel);
 
-            expect(
-                componentWrapElement
-                    .find('TransitionGroup')
-                    .childAt(1)
-                    .find('CSSTransition > div label')
-                    .text()
-            ).to.equal(`${secondLabel}`);
+        //     expect(
+        //         componentWrapElement
+        //             .find('TransitionGroup')
+        //             .childAt(1)
+        //             .find('CSSTransition > div label')
+        //             .text()
+        //     ).to.equal(`${secondLabel}`);
 
-            expect(
-                componentWrapElement
-                    .find('TransitionGroup')
-                    .childAt(2)
-                    .find('CSSTransition > div label')
-                    .text()
-            ).to.equal(thirdLabel);
-        });
+        //     expect(
+        //         componentWrapElement
+        //             .find('TransitionGroup')
+        //             .childAt(2)
+        //             .find('CSSTransition > div label')
+        //             .text()
+        //     ).to.equal(thirdLabel);
+        // });
 
         it('should show checkbox', () => {
             const checkboxSelector = 'input[type="checkbox"]';
