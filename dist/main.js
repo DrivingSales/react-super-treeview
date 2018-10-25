@@ -325,6 +325,8 @@ var SuperTreeview = function (_Component) {
     }, {
         key: 'printNodes',
         value: function printNodes(nodeArray) {
+            var _this5 = this;
+
             var _props9 = this.props,
                 keywordLabel = _props9.keywordLabel,
                 depth = _props9.depth,
@@ -374,7 +376,10 @@ var SuperTreeview = function (_Component) {
                                     {
                                         htmlFor: node.id,
                                         title: nodeText,
-                                        className: 'super-treeview-text'
+                                        className: 'super-treeview-text',
+                                        onClick: function onClick() {
+                                            _this5.handleExpandToggle(node);
+                                        }
                                     },
                                     nodeText
                                 ),

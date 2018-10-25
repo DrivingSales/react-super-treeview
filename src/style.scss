@@ -89,6 +89,7 @@ $super-treeview-tree-stem-color: #000;
         }
 
         > label {
+          cursor: pointer;
           vertical-align: top;
           text-overflow: ellipsis;
           width: calc(100% - 55px);

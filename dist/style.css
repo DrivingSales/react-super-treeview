@@ -59,6 +59,7 @@
         .super-treeview > div > .super-treeview-node > .super-treeview-node-content > .round input[type="checkbox"]:checked + label:after {
           opacity: 1; }
       .super-treeview > div > .super-treeview-node > .super-treeview-node-content > label {
+        cursor: pointer;
         vertical-align: top;
         text-overflow: ellipsis;
         width: calc(100% - 55px);
