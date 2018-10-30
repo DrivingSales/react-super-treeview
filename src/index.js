@@ -110,7 +110,7 @@ class SuperTreeview extends Component {
                         checked={!!node.isChecked}
                         id={node.id}
                     />
-                    <label for={node.id}></label>
+                    <label htmlFor={node.id}></label>
                 </div>
             );
         }

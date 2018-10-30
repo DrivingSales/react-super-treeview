@@ -241,7 +241,7 @@ var SuperTreeview = function (_Component) {
                         checked: !!node.isChecked,
                         id: node.id
                     }),
-                    _react2.default.createElement('label', { 'for': node.id })
+                    _react2.default.createElement('label', { htmlFor: node.id })
                 );
             }
         }
